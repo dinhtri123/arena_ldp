@@ -30,7 +30,8 @@ ul {
   list-style: none;
 }
 input,
-button {
+button,
+select {
   border: none;
   outline: none;
 }
