@@ -35,4 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
   btnCloseMenu.addEventListener("click", function () {
     navMenu.classList.remove("active");
   });
+
+  // popup
+  const popup = document.querySelector(".popup");
+  const btnClose = document.querySelector(".btn-close-popup");
+  const btnPopup = Array.from(document.querySelectorAll(".btn-popup"));
+  btnPopup.map((item) => {
+    item.addEventListener("click", function () {
+      popup.classList.add("active");
+    });
+  });
+  btnClose.addEventListener("click", function () {
+    btnClose.parentNode.parentNode.classList.remove("active");
+  });
 });
